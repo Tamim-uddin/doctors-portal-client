@@ -2,6 +2,7 @@ import React from 'react';
 import AppointmentBg from '../AppointmentBg/AppointmentBg';
 import Banner from '../Banner/Banner';
 import ContuctUs from '../ContuctUs/ContuctUs';
+import Doctors from '../Doctors/Doctors';
 import Feature from '../Feature/Feature';
 import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
@@ -16,6 +17,7 @@ const Home = () => {
             <Services></Services>
             <Feature></Feature>
             <AppointmentBg></AppointmentBg>
+            <Doctors></Doctors>
             <Testimonial></Testimonial>
             <ContuctUs></ContuctUs>
             <Footer></Footer>
