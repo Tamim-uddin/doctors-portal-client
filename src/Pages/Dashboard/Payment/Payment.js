@@ -11,7 +11,7 @@ const Payment = () => {
     const {appointmentId} = useParams();
     const [appointment, setappointment] = useState({});
     useEffect( () => {
-        fetch(`http://localhost:5000/appointments/${appointmentId}`)
+        fetch(` https://secret-tundra-43833.herokuapp.com/appointments/${appointmentId}`)
         .then(res => res.json())
         .then(data => setappointment(data))
     } , [appointmentId])

@@ -16,7 +16,7 @@ const CheckoutForm = ({appointment}) => {
     const [clientSecret, setclientSecret] = useState('');
 
     useEffect( () => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch(' https://secret-tundra-43833.herokuapp.com/create-payment-intent', {
             method : 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -83,7 +83,7 @@ const CheckoutForm = ({appointment}) => {
                 last4: paymentMethod.card.last4,
                 transaction: paymentIntent.client_secret.slice('_secret')[0]
             }
-            const url = `http://localhost:5000/appointments/${_id}`;
+            const url = ` https://secret-tundra-43833.herokuapp.com/appointments/${_id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
